@@ -1,0 +1,22 @@
+damped_mean top 10 
+4.423809523809524  Shawshank Redemption, The (1994) 318
+4.396984924623116  Godfather, The (1972) 858
+4.3739316239316235  Usual Suspects, The (1995) 50
+4.317460317460317  Christmas Story, A (1983) 2804
+4.256302521008403  Schindler's List (1993) 527
+4.2556390977443606  Godfather: Part II, The (1974) 1221
+4.247727272727273  Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981) 1198
+4.231788079470198  Memento (2000) 4226
+4.220394736842105  Silence of the Lambs, The (1991) 593
+4.219047619047619  Rear Window (1954) 904
+for best top 10 
+107761.5  Pulp Fiction (1994)
+102001.27567567567  Forrest Gump (1994)
+94699.5  Jurassic Park (1993)
+91394.05504587154  Silence of the Lambs, The (1991)
+74109.66315789474  Star Wars: Episode IV - A New Hope (1977)
+72350.51063829787  Toy Story (1995)
+68238.35398230088  Braveheart (1995)
+67515.77092511013  Fugitive, The (1993)
+67507.73333333332  Matrix, The (1999)
+67227.35779816513  Terminator 2: Judgment Day (1991)
