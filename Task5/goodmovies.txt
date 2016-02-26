@@ -1,0 +1,10 @@
+Mr. & Mrs. Smith;Angelina Jolie,Brad Pitt,spies,espionage,funny,Action,romantic comedy;
+The Social Network;computers,Jesse Eisenberg,true story,based on true story,internet,nerds,hacking,college,software developers,loneliness,David Fincher,business,witty,friendship,based on a true story,facebook,Justin Timberlake,social network,Andrew Garfield,protagonist is a computer programmer,complex characters,funny,dark comedy,cinematography;
+Van Helsing;vampires,werewolves,Hugh Jackman,Kate Beckinsale,gothic,steampunk,Van Helsing;
+Kung Fu Panda;Kung Fu,animation,martial arts,comedy,Jack Black,pixar,dragon,anti-hero,funny,Angeline Jolie,animals,panda,Jackie Chan,good versus evil,talking animals;
+The Matrix;sci-fi,virtual reality,dystopia,cyberpunk,philosophy,martial arts,artificial intelligent,thought-provoking,action,alternate reality,post-apocalyptic,surreal,Keanu Reeves,philosophical,post apocalyptic,computers,stylized,cult film,atmospheric,hackers,fantasy,fight scenes,dark hero,Special Effects;
+Inception;alternate reality,visually appealing,thought-provoking,surreal,Leonardo DiCaprio,mindfuck,sci-fi,complicated,dreams,action,dreamlike,intellectual,Christopher Nolan,twist ending,philosophy,clever,heist,suspense,Ellen Page,multiple interpretations,great soundtrack,Joseph Gordon-Levitt,cerebral,psychological;
+In Time;sci-fi,dystopia,immortality,thought-provoking,futer,social commentary,corruption,cheesy,Justin Timberlake,plot holes,time,original,justice,Amanda Seyfried,great idea wasted,great idea,fugitive,police corruption,eternal youth,Collian Murphy;
+Frozen;Disney,animation,musical,beautiful,music,feminist,sisters,siblings,Ice,storyline,sister sister relationship,magic,good message,royalty,voice acting,romance,pacing,themes,Jennifer Lee,bad writing;
+The Age of Adaline;romance,Harrison ford,Blake Lively;
+The Help;racism,Emma Stone,great acting,segregation,social commentary,based on a book,Tearjerker,Viola Davis,feel good movie,1960s,historical,southern Us,Octavia Spencer,strong female lead;
