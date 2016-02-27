@@ -12,9 +12,17 @@ public class Main {
      tags.add("dwarf");
      tags.add("elf");
      tags.add("music");
-    // tags.add("software developers");
-     //tags.add("sci-fi");
-   	 Task t = new Task(tags);
+   	 Task task = new Task("goodmovies","badmovies");//моњ ф≥льми
+   	 System.out.println("…мов≥рн≥сть = "+task.probability(tags));
+   	 tags.clear();
+     tags.add("software developers");
+     tags.add("sci-fi");
+   	 System.out.println("…мов≥рн≥сть = "+task.probability(tags));
+   	 Task task2 = new Task("1","2");//ф≥льми з прикладу
+   	 tags.clear();
+     tags.add("recommender");
+     tags.add("intelligent");
+     System.out.println("…мов≥рн≥сть = "+task2.probability(tags));
    	 System.out.println("Finish");
    	 
    }

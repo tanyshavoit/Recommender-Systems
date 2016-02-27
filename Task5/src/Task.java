@@ -19,21 +19,18 @@ import java.util.HashSet;
 
 public class Task {
 	ArrayList<String> allTags;// множина усіх тегів
-	ArrayList<ArrayList<String>> label1;
-	ArrayList<ArrayList<String>> label0;
-	ArrayList<ArrayList<Integer>> t_label1;
-	ArrayList<String> tags;
+	ArrayList<ArrayList<String>> label1;//усі тегі, які присутні у фільмах,які сподобались
+	ArrayList<ArrayList<String>> label0;//усі тегі, які присутні у фільмах, котрі не сподобались
+	ArrayList<ArrayList<Integer>> t_label1;//вектори присутності тегів,для кожного фільму(усі тегі 0 якщо немає в фільмі 1 якщо є)
 
-	Task(ArrayList<String> tags) {
-		this.tags = tags;
+	Task(String filename1,String filename2) {
 		allTags = new ArrayList<String>();
 		label1 = new ArrayList<ArrayList<String>>();
 		label0 = new ArrayList<ArrayList<String>>();
 		t_label1 = new ArrayList<ArrayList<Integer>>();
-		readFile("goodmovies.txt", label1);
-		readFile("badmovies.txt", label0);
+		readFile(filename1+".txt", label1);
+		readFile(filename2+".txt", label0);
 		createTagsTable(label1,t_label1);
-		System.out.println("Ймовірність = "+probability());
 	
 	}
 	
@@ -48,13 +45,13 @@ public class Task {
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
 			String line;
 			while ((line = bufferedReader.readLine()) != null) {
-				for (char s : bufferedReader.readLine().toCharArray()) {
+				for (char s : line.toCharArray()) {
 					if (s == ';') {
 						t = true;
 					}
 					if (t) {
 						if (s == ',' || s == ';') {
-							if(!allTags.contains(tag)){
+							if((!allTags.contains(tag))&&(!tag.equals(""))){	
 							allTags.add(tag);}
 							ar.add(tag);
 							tag = "";
@@ -75,7 +72,7 @@ public class Task {
 		}
 
 	}
-
+//створюємо вектори присутності тегів
 private void createTagsTable(ArrayList<ArrayList<String>> ar1, ArrayList<ArrayList<Integer>> ar2){
 	ArrayList<Integer> ar = new ArrayList<Integer>();
 	for(ArrayList<String> a: ar1){
@@ -92,7 +89,9 @@ private void createTagsTable(ArrayList<ArrayList<String>> ar1, ArrayList<ArrayLi
     
 	}
 }
-private double probability(){
+
+//рахуємо з якою ймовірністю нас сподобається фільм з даними тегами за допомогою Баєвського класифікатора(лекція 6)
+public double probability(ArrayList<String> tags){
 	double probability=1;
 	double count=0;
 	for(String s:tags){
@@ -101,18 +100,21 @@ private double probability(){
 				if(t_label1.get(i).get(allTags.indexOf(s))==1){count+=1;}	
 			}
 			probability*=(count/label1.size());	
+			count=0;
 		}
 		else{
            return 0;
 		}
 	}
-	count=0;
+
 	for(String s:allTags){
 		if(!tags.contains(s)){
 			for(int i=0;i<label1.size();i++){
-				if(t_label1.get(i).get(allTags.indexOf(s))==0){count+=1;}	
+				if(t_label1.get(i).get(allTags.indexOf(s))==0){
+					count+=1;}	
 			}
 			probability*=(count/label1.size());	
+			count=0;
 		}
 
 	}

@@ -1,0 +1,3 @@
+doc3;recommender,intelligent,learning;
+doc;recommender,intelligent;
+doc4;recommender,learning,school;
